@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_nft_marketplace_app/constants/color.dart';
 import 'package:provider/provider.dart';
-import '../providers/provider_nft.dart';
+import 'package:flutter_nft_marketplace_app/constants/color.dart';
+import 'package:flutter_nft_marketplace_app/providers/provider_nft.dart';
 
 class DetailDescription extends StatelessWidget {
   const DetailDescription({super.key});

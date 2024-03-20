@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nft_marketplace_app/constants/color.dart';
 import 'package:flutter_nft_marketplace_app/widgets/detail_description.dart';
 import 'package:flutter_nft_marketplace_app/widgets/detail_image.dart';
-import '../widgets/button_bid.dart';
-import '../widgets/detail_price.dart';
+import 'package:flutter_nft_marketplace_app/widgets/button_bid.dart';
+import 'package:flutter_nft_marketplace_app/widgets/detail_price.dart';
 
 class DetailNFT extends StatefulWidget {
   static const nameRouted = '/detailnft';

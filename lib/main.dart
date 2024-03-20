@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_nft_marketplace_app/providers/provider_nft.dart';
-import 'package:flutter_nft_marketplace_app/screens/detail_nft.dart';
-import './screens/dasboard.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_nft_marketplace_app/screens/detail_nft.dart';
+import 'package:flutter_nft_marketplace_app/screens/dasboard.dart';
+import 'package:flutter_nft_marketplace_app/providers/provider_nft.dart';
+
 
 void main() {
   runApp(const MyApp());
