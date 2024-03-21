@@ -176,6 +176,7 @@ class _ListViewItemState extends State<ListViewItem> {
                                         Expanded(
                                           flex: 4,
                                           child: CircleAvatar(
+                                            backgroundImage: AssetImage(nft.imageprofile),
                                             radius: 20,
                                             child: Image(
                                                 image: AssetImage(

@@ -56,8 +56,13 @@ flutter:
     - assets/nft4.png
     - assets/nft5.png
     - assets/nft6.png
-    - assets/profilename.png
-    - assets/profilebid.png
+    - assets/profileimage1.png
+    - assets/profileimage2.png
+    - assets/profileimage3.png
+    - assets/profileimage4.png
+    - assets/profileimage5.png
+    - assets/profileimage6.png
+    - assets/profileimage7.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
