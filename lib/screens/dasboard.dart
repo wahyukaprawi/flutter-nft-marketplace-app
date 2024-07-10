@@ -31,7 +31,6 @@ class _DasboardState extends State<Dasboard> {
       drawer: const Drawer(),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: tdBGColor,
         leading: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
