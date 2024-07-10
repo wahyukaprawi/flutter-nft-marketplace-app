@@ -21,25 +21,29 @@ class _DetailImageState extends State<DetailImage> {
           height: 315,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-              color: tdWhite,
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: const [
-                BoxShadow(
-                  color: tdShadow,
-                  blurRadius: 5,
-                  spreadRadius: 0,
-                  offset: Offset(0, 2),
-                )
-              ]),
+            color: tdWhite,
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: const [
+              BoxShadow(
+                color: tdShadow,
+                blurRadius: 5,
+                spreadRadius: 0,
+                offset: Offset(0, 2),
+              )
+            ],
+          ),
           child: Stack(
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image(
-                  fit: BoxFit.cover,
-                  image: AssetImage(nft.image),
-                  width: double.infinity,
-                  height: double.infinity,
+              Hero(
+                tag: nft,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image(
+                    fit: BoxFit.cover,
+                    image: AssetImage(nft.image),
+                    width: double.infinity,
+                    height: double.infinity,
+                  ),
                 ),
               ),
               Column(

@@ -55,13 +55,16 @@ class _GridViewItem extends State<GridViewItem> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
                               ),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: Image(
-                                  fit: BoxFit.cover,
-                                  image: AssetImage(nft.image),
-                                  height: double.infinity,
-                                  width: double.infinity,
+                              child: Hero(
+                                tag: nft,
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(20),
+                                  child: Image(
+                                    fit: BoxFit.cover,
+                                    image: AssetImage(nft.image),
+                                    height: double.infinity,
+                                    width: double.infinity,
+                                  ),
                                 ),
                               ),
                             ),
