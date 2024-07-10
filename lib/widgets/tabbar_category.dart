@@ -28,22 +28,23 @@ class TabbarCategory extends StatelessWidget {
       ),
     ];
     return DefaultTabController(
-        length: listCategory.length,
-        child: Column(
-          children: [
-            ButtonsTabBar(
-              height: 40,
-              radius: 5,
-              borderWidth: 2,
-              buttonMargin: const EdgeInsets.symmetric(horizontal: 15),
-              contentPadding: const EdgeInsets.symmetric(horizontal: 15),
-              backgroundColor: tdCyan,
-              borderColor: tdCyan.withOpacity(0.1),
-              unselectedBackgroundColor: tdWhite,
-              unselectedBorderColor: tdBluegrey.withOpacity(0.1),
-              tabs: listCategory,
-            )
-          ],
-        ));
+      length: listCategory.length,
+      child: Column(
+        children: [
+          ButtonsTabBar(
+            height: 40,
+            radius: 5,
+            borderWidth: 2,
+            buttonMargin: const EdgeInsets.symmetric(horizontal: 15),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 15),
+            backgroundColor: tdCyan,
+            borderColor: tdCyan.withOpacity(0.1),
+            unselectedBackgroundColor: tdWhite,
+            unselectedBorderColor: tdBluegrey.withOpacity(0.1),
+            tabs: listCategory,
+          )
+        ],
+      ),
+    );
   }
 }

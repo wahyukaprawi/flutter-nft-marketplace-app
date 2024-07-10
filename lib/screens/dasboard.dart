@@ -94,15 +94,16 @@ class _DasboardState extends State<Dasboard> {
               height: 40,
               width: 120,
               decoration: BoxDecoration(
-                  color: tdWhite,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: tdShadow,
-                      blurRadius: 8,
-                      spreadRadius: 0,
-                    )
-                  ]),
+                color: tdWhite,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: const [
+                  BoxShadow(
+                    color: tdShadow,
+                    blurRadius: 8,
+                    spreadRadius: 0,
+                  )
+                ],
+              ),
               child: Row(
                 children: [
                   IconButton(
@@ -115,7 +116,10 @@ class _DasboardState extends State<Dasboard> {
                   ),
                   const Text(
                     '9.169 ETH',
-                    style: TextStyle(fontSize: 12, color: tdBlack),
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: tdBlack,
+                    ),
                   )
                 ],
               ),
@@ -131,99 +135,103 @@ class _DasboardState extends State<Dasboard> {
         child: Row(
           children: [
             Expanded(
-                child: Column(
-              children: [
-                IconButton(
-                  onPressed: () {
-                    setState(() {
-                      currentScreens = const Dasboard();
-                      currentTab = 0;
-                    });
-                  },
-                  icon: Icon(
-                    Icons.home_outlined,
-                    color: currentTab == 0 ? tdCyan : tdGray,
-                  ),
-                  splashRadius: 20,
-                ),
-                Text(
-                  'Home',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: currentTab == 0 ? tdCyan : tdGray,
-                  ),
-                ),
-              ],
-            )),
-            Expanded(
-                child: Column(
-              children: [
-                Column(
-                  children: [
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          currentScreens = const Explore();
-                          currentTab = 1;
-                        });
-                      },
-                      icon: Icon(
-                        Icons.explore_outlined,
-                        color: currentTab == 1 ? tdCyan : tdGray,
-                      ),
-                      splashRadius: 20,
+              child: Column(
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      setState(() {
+                        currentScreens = const Dasboard();
+                        currentTab = 0;
+                      });
+                    },
+                    icon: Icon(
+                      Icons.home_outlined,
+                      color: currentTab == 0 ? tdCyan : tdGray,
                     ),
-                    Text(
-                      'Explore',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: currentTab == 1 ? tdCyan : tdGray,
-                      ),
+                    splashRadius: 20,
+                  ),
+                  Text(
+                    'Home',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: currentTab == 0 ? tdCyan : tdGray,
                     ),
-                  ],
-                ),
-              ],
-            )),
+                  ),
+                ],
+              ),
+            ),
             Expanded(
-                child: Column(
-              children: const [
-                SizedBox(
-                  height: 48,
-                ),
-                Text(
-                  'Swap',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: tdGray,
+              child: Column(
+                children: [
+                  Column(
+                    children: [
+                      IconButton(
+                        onPressed: () {
+                          setState(() {
+                            currentScreens = const Explore();
+                            currentTab = 1;
+                          });
+                        },
+                        icon: Icon(
+                          Icons.explore_outlined,
+                          color: currentTab == 1 ? tdCyan : tdGray,
+                        ),
+                        splashRadius: 20,
+                      ),
+                      Text(
+                        'Explore',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: currentTab == 1 ? tdCyan : tdGray,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-              ],
-            )),
+                ],
+              ),
+            ),
+            const Expanded(
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 48,
+                  ),
+                  Text(
+                    'Swap',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: tdGray,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             Expanded(
-                child: Column(
-              children: [
-                IconButton(
-                  onPressed: () {
-                    setState(() {
-                      currentScreens = const Market();
-                      currentTab = 2;
-                    });
-                  },
-                  icon: Icon(
-                    Icons.pie_chart_outline_outlined,
-                    color: currentTab == 2 ? tdCyan : tdGray,
+              child: Column(
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      setState(() {
+                        currentScreens = const Market();
+                        currentTab = 2;
+                      });
+                    },
+                    icon: Icon(
+                      Icons.pie_chart_outline_outlined,
+                      color: currentTab == 2 ? tdCyan : tdGray,
+                    ),
+                    splashRadius: 20,
                   ),
-                  splashRadius: 20,
-                ),
-                Text(
-                  'Market',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: currentTab == 2 ? tdCyan : tdGray,
+                  Text(
+                    'Market',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: currentTab == 2 ? tdCyan : tdGray,
+                    ),
                   ),
-                ),
-              ],
-            )),
+                ],
+              ),
+            ),
             Expanded(
                 child: Column(
               children: [

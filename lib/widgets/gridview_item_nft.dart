@@ -48,8 +48,9 @@ class _GridViewItem extends State<GridViewItem> {
                   child: Column(
                     children: [
                       Expanded(
-                          flex: 2,
-                          child: Stack(children: [
+                        flex: 2,
+                        child: Stack(
+                          children: [
                             Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -71,35 +72,37 @@ class _GridViewItem extends State<GridViewItem> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Container(
-                                      width: 20,
-                                      height: 20,
-                                      decoration: BoxDecoration(
-                                          color: tdRed.withOpacity(0.3),
-                                          borderRadius:
-                                              BorderRadius.circular(5)),
-                                      alignment: Alignment.topLeft,
-                                      child: IconButton(
-                                        onPressed: () {
-                                          setState(() {
-                                            nft.isFavorite = !nft.isFavorite;
-                                          });
-                                        },
-                                        icon: Icon(
-                                          nft.isFavorite
-                                              ? Icons.favorite
-                                              : Icons.favorite_outline,
-                                          size: 15,
-                                          color: tdRed,
-                                        ),
-                                        padding: const EdgeInsets.all(0),
-                                        splashRadius: 15,
-                                      )),
+                                    width: 20,
+                                    height: 20,
+                                    decoration: BoxDecoration(
+                                      color: tdRed.withOpacity(0.3),
+                                      borderRadius: BorderRadius.circular(5),
+                                    ),
+                                    alignment: Alignment.topLeft,
+                                    child: IconButton(
+                                      onPressed: () {
+                                        setState(() {
+                                          nft.isFavorite = !nft.isFavorite;
+                                        });
+                                      },
+                                      icon: Icon(
+                                        nft.isFavorite
+                                            ? Icons.favorite
+                                            : Icons.favorite_outline,
+                                        size: 15,
+                                        color: tdRed,
+                                      ),
+                                      padding: const EdgeInsets.all(0),
+                                      splashRadius: 15,
+                                    ),
+                                  ),
                                   Container(
                                     width: 20,
                                     height: 20,
                                     decoration: BoxDecoration(
-                                        color: tdSilver.withOpacity(0.7),
-                                        borderRadius: BorderRadius.circular(5)),
+                                      color: tdSilver.withOpacity(0.7),
+                                      borderRadius: BorderRadius.circular(5),
+                                    ),
                                     child: const Icon(
                                       Icons.more_vert_outlined,
                                       size: 15,
@@ -109,33 +112,35 @@ class _GridViewItem extends State<GridViewItem> {
                                 ],
                               ),
                             )
-                          ])),
+                          ],
+                        ),
+                      ),
                       Expanded(
-                          flex: 1,
-                          child: Column(
-                            children: [
-                              Expanded(
-                                flex: 1,
-                                child: Container(
-                                  padding: const EdgeInsets.only(
-                                      left: 15, right: 15),
-                                  alignment: Alignment.centerLeft,
-                                  child: Text(
-                                    nft.title,
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold),
-                                  ),
+                        flex: 1,
+                        child: Column(
+                          children: [
+                            Expanded(
+                              flex: 1,
+                              child: Container(
+                                padding:
+                                    const EdgeInsets.only(left: 15, right: 15),
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  nft.title,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ),
-                              Expanded(
-                                flex: 1,
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                        child: Container(
+                            ),
+                            Expanded(
+                              flex: 1,
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
                                       padding: const EdgeInsets.only(
                                           left: 15, top: 3),
                                       alignment: Alignment.topLeft,
@@ -146,16 +151,18 @@ class _GridViewItem extends State<GridViewItem> {
                                             fontWeight: FontWeight.bold,
                                             color: tdCyan),
                                       ),
-                                    )),
-                                    Expanded(
-                                        child: Padding(
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Padding(
                                       padding: const EdgeInsets.only(
                                           bottom: 20, left: 10, right: 10),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(5),
-                                            color: tdCyan.withOpacity(0.2)),
+                                          borderRadius:
+                                              BorderRadius.circular(5),
+                                          color: tdCyan.withOpacity(0.2),
+                                        ),
                                         alignment: Alignment.center,
                                         child: Text(
                                           nft.category,
@@ -165,12 +172,14 @@ class _GridViewItem extends State<GridViewItem> {
                                           ),
                                         ),
                                       ),
-                                    )),
-                                  ],
-                                ),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ))
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),

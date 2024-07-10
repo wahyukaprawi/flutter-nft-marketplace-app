@@ -23,54 +23,57 @@ class _ListViewItemState extends State<ListViewItem> {
           },
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 3),
-            child: Column(children: [
-              Container(
-                height: 375,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: tdWhite,
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: tdShadow,
-                      blurRadius: 5,
-                      spreadRadius: 0,
-                      offset: Offset(0, 2),
-                    )
-                  ],
-                ),
-                child: Column(
-                  children: [
-                    Expanded(
-                      flex: 2,
-                      child: Stack(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              color: tdBlack,
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Image(
-                                fit: BoxFit.cover,
-                                image: AssetImage(nft.image),
-                                height: double.infinity,
-                                width: double.infinity,
+            child: Column(
+              children: [
+                Container(
+                  height: 375,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: tdWhite,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: tdShadow,
+                        blurRadius: 5,
+                        spreadRadius: 0,
+                        offset: Offset(0, 2),
+                      )
+                    ],
+                  ),
+                  child: Column(
+                    children: [
+                      Expanded(
+                        flex: 2,
+                        child: Stack(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: tdBlack,
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(20),
+                                child: Image(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage(nft.image),
+                                  height: double.infinity,
+                                  width: double.infinity,
+                                ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(15),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Container(
+                            Padding(
+                              padding: const EdgeInsets.all(15),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
                                     width: 25,
                                     height: 25,
                                     decoration: BoxDecoration(
-                                        color: tdRed.withOpacity(0.3),
-                                        borderRadius: BorderRadius.circular(5)),
+                                      color: tdRed.withOpacity(0.3),
+                                      borderRadius: BorderRadius.circular(5),
+                                    ),
                                     child: IconButton(
                                       onPressed: () {
                                         setState(() {
@@ -86,68 +89,71 @@ class _ListViewItemState extends State<ListViewItem> {
                                       ),
                                       padding: const EdgeInsets.all(0),
                                       splashRadius: 15,
-                                    )),
-                                Row(
-                                  children: [
-                                    Container(
-                                      width: 25,
-                                      height: 25,
-                                      decoration: BoxDecoration(
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        width: 25,
+                                        height: 25,
+                                        decoration: BoxDecoration(
                                           color: tdSilver.withOpacity(0.7),
                                           borderRadius:
-                                              BorderRadius.circular(5)),
-                                      alignment: Alignment.center,
-                                      child: const Text(
-                                        '09',
-                                        style: TextStyle(
-                                            color: tdWhite,
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.bold),
+                                              BorderRadius.circular(5),
+                                        ),
+                                        alignment: Alignment.center,
+                                        child: const Text(
+                                          '09',
+                                          style: TextStyle(
+                                              color: tdWhite,
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
                                       ),
-                                    ),
-                                    Container(
-                                      width: 25,
-                                      height: 25,
-                                      decoration: BoxDecoration(
+                                      Container(
+                                        width: 25,
+                                        height: 25,
+                                        decoration: BoxDecoration(
                                           color: tdSilver.withOpacity(0.7),
                                           borderRadius:
-                                              BorderRadius.circular(5)),
-                                      alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(left: 5),
-                                      child: const Text(
-                                        '13',
-                                        style: TextStyle(
-                                            color: tdWhite,
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.bold),
+                                              BorderRadius.circular(5),
+                                        ),
+                                        alignment: Alignment.center,
+                                        margin: const EdgeInsets.only(left: 5),
+                                        child: const Text(
+                                          '13',
+                                          style: TextStyle(
+                                              color: tdWhite,
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
                                       ),
-                                    ),
-                                    Container(
-                                      width: 25,
-                                      height: 25,
-                                      decoration: BoxDecoration(
-                                          color: tdSilver.withOpacity(0.7),
-                                          borderRadius:
-                                              BorderRadius.circular(5)),
-                                      alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(left: 5),
-                                      child: const Text(
-                                        '47',
-                                        style: TextStyle(
-                                            color: tdWhite,
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.bold),
+                                      Container(
+                                        width: 25,
+                                        height: 25,
+                                        decoration: BoxDecoration(
+                                            color: tdSilver.withOpacity(0.7),
+                                            borderRadius:
+                                                BorderRadius.circular(5)),
+                                        alignment: Alignment.center,
+                                        margin: const EdgeInsets.only(left: 5),
+                                        child: const Text(
+                                          '47',
+                                          style: TextStyle(
+                                              color: tdWhite,
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
                                       ),
-                                    ),
-                                  ],
-                                )
-                              ],
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                    Expanded(
+                      Expanded(
                         flex: 1,
                         child: Column(
                           children: [
@@ -169,21 +175,22 @@ class _ListViewItemState extends State<ListViewItem> {
                               child: Row(
                                 children: [
                                   Expanded(
-                                      child: Container(
-                                    padding: const EdgeInsets.only(left: 5),
-                                    child: Row(
-                                      children: [
-                                        Expanded(
-                                          flex: 4,
-                                          child: CircleAvatar(
-                                            backgroundImage: AssetImage(nft.imageprofile),
-                                            radius: 20,
-                                            child: Image(
-                                                image: AssetImage(
-                                                    nft.imageprofile)),
+                                    child: Container(
+                                      padding: const EdgeInsets.only(left: 5),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            flex: 4,
+                                            child: CircleAvatar(
+                                              backgroundImage:
+                                                  AssetImage(nft.imageprofile),
+                                              radius: 20,
+                                              child: Image(
+                                                  image: AssetImage(
+                                                      nft.imageprofile)),
+                                            ),
                                           ),
-                                        ),
-                                        Expanded(
+                                          Expanded(
                                             flex: 6,
                                             child: Column(
                                               children: [
@@ -218,24 +225,26 @@ class _ListViewItemState extends State<ListViewItem> {
                                                   ),
                                                 ),
                                               ],
-                                            ))
-                                      ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  )),
+                                  ),
                                   Expanded(
-                                      child: Container(
-                                    padding: const EdgeInsets.only(left: 5),
-                                    child: Row(
-                                      children: [
-                                        Expanded(
-                                          flex: 4,
-                                          child: CircleAvatar(
-                                            child: Image(
-                                                image:
-                                                    AssetImage(nft.imagebid)),
+                                    child: Container(
+                                      padding: const EdgeInsets.only(left: 5),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            flex: 4,
+                                            child: CircleAvatar(
+                                              child: Image(
+                                                  image:
+                                                      AssetImage(nft.imagebid)),
+                                            ),
                                           ),
-                                        ),
-                                        Expanded(
+                                          Expanded(
                                             flex: 6,
                                             child: Column(
                                               children: [
@@ -269,19 +278,23 @@ class _ListViewItemState extends State<ListViewItem> {
                                                   ),
                                                 ),
                                               ],
-                                            ))
-                                      ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  )),
+                                  ),
                                 ],
                               ),
                             )
                           ],
-                        ))
-                  ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
-              ),
-            ]),
+              ],
+            ),
           ),
         );
       },

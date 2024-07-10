@@ -60,15 +60,16 @@ class _DetailNFTState extends State<DetailNFT> {
               height: 40,
               width: 120,
               decoration: BoxDecoration(
-                  color: tdWhite,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: tdShadow,
-                      blurRadius: 8,
-                      spreadRadius: 0,
-                    )
-                  ]),
+                color: tdWhite,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: const [
+                  BoxShadow(
+                    color: tdShadow,
+                    blurRadius: 8,
+                    spreadRadius: 0,
+                  )
+                ],
+              ),
               child: Row(
                 children: [
                   IconButton(
@@ -81,7 +82,10 @@ class _DetailNFTState extends State<DetailNFT> {
                   ),
                   const Text(
                     '9.169 ETH',
-                    style: TextStyle(fontSize: 12, color: tdBlack),
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: tdBlack,
+                    ),
                   )
                 ],
               ),
@@ -118,31 +122,35 @@ class _DetailNFTState extends State<DetailNFT> {
         child: Column(
           children: [
             Expanded(
-                flex: 10,
-                child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-                  child: const DetailImage(),
-                )),
+              flex: 10,
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                child: const DetailImage(),
+              ),
+            ),
             Expanded(
-                flex: 6,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: const DetailDescription(),
-                )),
+              flex: 6,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 20,),
+                child: const DetailDescription(),
+              ),
+            ),
             Expanded(
-                flex: 3,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: const DetailPrice(),
-                )),
+              flex: 3,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: const DetailPrice(),
+              ),
+            ),
             Expanded(
-                flex: 3,
-                child: Container(
-                  padding: const EdgeInsets.only(
-                      left: 20, right: 20, top: 20, bottom: 25),
-                  child: const ButtonBid(),
-                )),
+              flex: 3,
+              child: Container(
+                padding: const EdgeInsets.only(
+                    left: 20, right: 20, top: 20, bottom: 25),
+                child: const ButtonBid(),
+              ),
+            ),
           ],
         ),
       ),

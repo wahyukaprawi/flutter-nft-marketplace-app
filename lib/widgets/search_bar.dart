@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_nft_marketplace_app/constants/color.dart';
 
-class SearchBar extends StatelessWidget {
-  const SearchBar({super.key});
+class SearchBarWidget extends StatelessWidget {
+  const SearchBarWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

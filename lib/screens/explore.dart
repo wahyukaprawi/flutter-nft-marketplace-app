@@ -16,28 +16,33 @@ class _ExploreState extends State<Explore> {
       child: Column(
         children: [
           Expanded(
-              flex: 2,
-              child: Container(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
-                child: const SearchBar(),
-              )),
+            flex: 2,
+            child: Container(
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+              child: const SearchBarWidget(),
+            ),
+          ),
           Expanded(
-              flex: 1,
-              child: Container(
-                margin: const EdgeInsets.only(left: 15),
-                alignment: Alignment.bottomLeft,
-                child: const Text(
-                  'Explore',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            flex: 1,
+            child: Container(
+              margin: const EdgeInsets.only(left: 15),
+              alignment: Alignment.bottomLeft,
+              child: const Text(
+                'Explore',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
                 ),
-              )),
+              ),
+            ),
+          ),
           Expanded(
-              flex: 15,
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                child: const GridViewItem(),
-              ))
+            flex: 14,
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              child: const GridViewItem(),
+            ),
+          )
         ],
       ),
     );

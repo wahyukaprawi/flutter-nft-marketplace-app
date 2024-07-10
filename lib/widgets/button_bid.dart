@@ -13,10 +13,11 @@ class ButtonBid extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
-                color: tdCyan.withOpacity(0.5),
-                blurRadius: 6,
-                spreadRadius: 0,
-                offset: const Offset(0, 2))
+              color: tdCyan.withOpacity(0.5),
+              blurRadius: 6,
+              spreadRadius: 0,
+              offset: const Offset(0, 2),
+            )
           ]),
       child: const Text(
         "\$ Place Bid Now",
