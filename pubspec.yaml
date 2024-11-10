@@ -50,19 +50,7 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/nft1.png
-    - assets/nft2.png
-    - assets/nft3.png
-    - assets/nft4.png
-    - assets/nft5.png
-    - assets/nft6.png
-    - assets/profileimage1.png
-    - assets/profileimage2.png
-    - assets/profileimage3.png
-    - assets/profileimage4.png
-    - assets/profileimage5.png
-    - assets/profileimage6.png
-    - assets/profileimage7.png
+    - assets/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
